@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
@@ -15,17 +15,43 @@
 	</header>
 	<div class="input">
 		<!-- form for text input here!-->
-		<div class="form"></div>
-		<div class="add">Add</div>
+		<form name="input" action="" method="get">
+			<div class="form">
+				<input type="text" name="newItem">
+			</div>
+			<div class="add">
+				<input type="submit" value="Add">
+			</div>
+		</form>
 	</div>
 	<div class="container">
 	<!-- actual shopping list to be filled in as more input is provided !-->
+		<form>
 		<ul class="list">
+			<li class ="unchecked item">
+				<input type="checkbox" name="listItem" value="1">OJ
+			</li>
+			<li class ="unchecked item">
+				<input type="checkbox" name="listItem" value="2">Milk
+			</li>
+			<li class ="unchecked item">
+				<input type="checkbox" name="listItem" value="3">Lettuce
+			</li>
+			<li class ="checked item">
+				<input type="checkbox" name="listItem" value="4">Pasta
+			</li>
+			<li class ="checked item">
+				<input type="checkbox" name="listItem" value="5">Chicken
+			</li>
 		</ul>
+		</form>
 	</div>
 	<div>
-		<div class="delete"></div>
-		<div class="instructions"></div>
+		<form name="input" action="" method="get">
+		<div class="delete">
+			<input type="submit" value="Delete">
+		</div>
+		<div class="help">Check items when they are finished</div>
 	</div>
 </body>
 </html>

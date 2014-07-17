@@ -54,5 +54,89 @@ table {
 }
 
 body {
-	background-color: black;
+	background: black;
+	color: blue;
+	font-family: verdana;
 }
+
+.title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+.instructions {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.input {
+	padding-left: 400px ;
+}
+
+.form {
+	height: 25px;
+	width: 300px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px;
+	display: block;
+	position: relative;
+}
+
+.add {
+	height: 25px;
+	width: 75px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	display: block;
+	position: relative;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.list {
+	height: 300px;
+	width: 400px;
+	position: relative;
+	display: block;
+	padding-left: 400px;
+}
+
+.item {
+	padding: 20px;
+}
+
+.checked {
+	text-decoration: line-through;
+	color: #436EEE;
+}
+
+.delete {
+	height: 25px;
+	width: 75px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	display: block;
+	position: relative;
+	left: 400px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.help {
+	height: 25px;
+	width: 400px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	display: block;
+	position: relative;
+	font-weight: bold;
+	float: right;
+}
+
