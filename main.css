@@ -97,13 +97,17 @@ body {
 	font-weight: bold;
 	font-size: 20px;
 }
-
-.list {
+.container{
+	width: 500px;
+	position: relative;
+	padding-left: 400px;
+}
+#list {
 	height: 300px;
 	width: 400px;
 	position: relative;
 	display: block;
-	padding-left: 400px;
+	padding-bottom: 20px;
 }
 
 .item {
