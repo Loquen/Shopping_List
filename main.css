@@ -48,10 +48,10 @@ table {
 }
 
 
-/* main css start */
+/* main css start 
 * { 
   outline: 1px solid red;
-}
+}*/
 
 body {
 	background: black;
@@ -74,7 +74,11 @@ body {
 }
 
 .input {
-	padding-left: 400px ;
+	width: 400px;
+	position:relative;
+	margin: 40px;
+	left: 360px ;
+	outline: 5px solid red;
 }
 
 .form {
@@ -98,9 +102,10 @@ body {
 	font-size: 20px;
 }
 .container{
-	width: 500px;
+	width: 400px;
 	position: relative;
-	padding-left: 400px;
+	left: 400px;
+	outline: 5px solid red;
 }
 .list {
 	height: 300px;
@@ -108,7 +113,7 @@ body {
 	position: relative;
 	display: block;
 	padding-bottom: 20px;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .item {
@@ -143,5 +148,12 @@ body {
 	position: relative;
 	font-weight: bold;
 	float: right;
+}
+
+input[type=button] {
+	border-radius: 5px;
+	font-weight: bold;
+	color: blue;
+	background: grey;
 }
 

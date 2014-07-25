@@ -18,7 +18,8 @@ $(document).ready(function() {
 
 	// Function to check/uncheck items when the checkbox is clicked
 	$('.list').on("click", function() {
-		$(this).find('.item > input:checked').parent().toggleClass("checked");	
+		$(this).find('.item > input:checked').parent().addClass("checked");
+		$(this).find('.item > input:not(:checked)').parent().removeClass("checked");	
 	});
 
 	// Function to remove items with the 'checked' class
