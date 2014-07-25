@@ -118,6 +118,8 @@ body {
 
 .item {
 	padding: 20px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .checked {
@@ -140,13 +142,14 @@ body {
 
 .help {
 	height: 25px;
-	width: 400px;
+	width: 450px;
 	margin: 10px;
 	padding: 5px;
 	text-align: center;
 	display: block;
 	position: relative;
 	font-weight: bold;
+	font-size: 20px;
 	float: right;
 }
 
