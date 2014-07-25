@@ -9,30 +9,24 @@ $(document).ready(function() {
 		
 		
 		if(input != "") {
-			$('#list').append("<input class ='unchecked item' type='checkbox' name='listItem' checked='checked' value='" + number + "'>" + input + "<p>" );
+			$('.list').append("<li class='item'><input type='checkbox' name='listItem' value='" + number + "'>" + input + "</li>" );
 			clear;
 			
 		}
 		number++;
 	});
 
-	var selected = [];
-	$('#list').each(function() {
-		if( $(this).prop("checked") ){
-			selected.push($(this).attr('name'));
-			console.log(selected);
+	// Function to check/uncheck items when the checkbox is clicked
+	$('.list').on("click", function() {
+		$(this).find('.item > input:checked').parent().toggleClass("checked");	
+	});
+
+	// Function to remove items with the 'checked' class
+	$('.delete').on('click', function(){
+		if($('.item').hasClass("checked"))
+		{
+			$('.item').filter('.checked').hide().slideUp();
 		}
-		
 	})
-	/*$(".list").change(function(){
-		if($("input:checkbox").checked) {
-			// Change class to "checked"
-			console.log("checked");
-			this.toggleClass("checked unchecked");
-		} else {
-			// Change class to "unchecked"
-			console.log("unchecked");
-			this.toggleClass("checked unchecked");
-		}
-	})*/
+	
 });

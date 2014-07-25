@@ -102,12 +102,13 @@ body {
 	position: relative;
 	padding-left: 400px;
 }
-#list {
+.list {
 	height: 300px;
 	width: 400px;
 	position: relative;
 	display: block;
 	padding-bottom: 20px;
+	overflow: scroll;
 }
 
 .item {
